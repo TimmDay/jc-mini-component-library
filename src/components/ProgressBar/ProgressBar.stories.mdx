@@ -1,8 +1,8 @@
-import { Meta, Story } from '@storybook/addon-docs/blocks';
-import ProgressBar from './ProgressBar';
+import { Meta, Story } from '@storybook/addon-docs/blocks'
+import ProgressBar from './ProgressBar.tsx'
 
 <Meta
-  title="ProgressBar"
+  title='ProgressBar'
   component={ProgressBar}
   argTypes={{
     value: {
@@ -21,10 +21,10 @@ import ProgressBar from './ProgressBar';
   }}
 />
 
-export const Template = (args) => <ProgressBar {...args} />;
+export const Template = (args) => <ProgressBar {...args} />
 
 # ProgressBar
 
-<Story name="Default" args={{ value: 50, size: 'medium' }}>
+<Story name='Default' args={{ value: 50, size: 'medium' }}>
   {Template.bind({})}
 </Story>

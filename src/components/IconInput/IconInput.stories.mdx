@@ -1,5 +1,5 @@
-import { Meta, Story } from '@storybook/addon-docs/blocks';
-import IconInput from './IconInput';
+import { Meta, Story } from "@storybook/addon-docs/blocks"
+import IconInput from "./IconInput.tsx"
 
 <Meta
   title="IconInput"
@@ -7,40 +7,40 @@ import IconInput from './IconInput';
   argTypes={{
     placeholder: {
       control: {
-        type: 'text',
+        type: "text",
       },
     },
     icon: {
       control: {
-        type: 'select',
-        options: ['search', 'at-sign'],
+        type: "select",
+        options: ["search", "at-sign"],
       },
     },
     size: {
       control: {
-        type: 'select',
-        options: ['small', 'large'],
+        type: "select",
+        options: ["small", "large"],
       },
     },
     label: {
       control: {
-        type: 'text',
+        type: "text",
       },
     },
   }}
 />
 
-export const Template = (args) => <IconInput {...args} />;
+export const Template = (args) => <IconInput {...args} />
 
 # IconInput
 
 <Story
   name="Default"
   args={{
-    placeholder: 'Search…',
-    label: 'Search',
-    icon: 'search',
-    size: 'small',
+    placeholder: "Search…",
+    label: "Search",
+    icon: "search",
+    size: "small",
   }}
 >
   {Template.bind({})}
